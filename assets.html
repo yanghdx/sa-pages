@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>态势感知-事件态势</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="static/css/animate.min.css">
+  <link rel="stylesheet" href="static/skin/css/style.css">
+</head>
+
+<body style="height: 100%; width: 100%">
+  <div class="main-content">
+    <table class="content">
+      <tr style="height: 15%">
+        <td>
+          <div class="head-top">
+            <div class="logo">
+              <img src="static/skin/images/logo-xd.png" style="height: 85px" />
+            </div>
+            <div class="title">
+              态势感知
+            </div>
+            <div class="menu" id="menu">
+              <div class="item" url="index.html">云平台态势</div>
+              <div class="item selected" url="assets.html">资产态势</div>
+              <div class="item" url="alarms.html">告警态势</div>
+              <div class="item" url="events.html">事件态势</div>
+              <div class="item" url="treats.html">处置态势</div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr style="height: 75%">
+        <td style="vertical-align: text-top">
+          <table>
+            <tr>
+              <td style="width: 70%; min-width: 520px; vertical-align: text-top;overflow: hidden" id="dynamic-showbox">
+                <div class="showbox" style="width: 100%; height: 100%; " id="showbox-0">
+                  <table style="padding-left: 2%; vertical-align: top;" id="59053893-box" page="0">
+                    <tr style="height: 70%; vertical-align: top">
+                      <td style="vertical-align: top">
+                        <div class="middle-box">
+                          <div class="tmbg quxian" id="events-quxian">
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr style="height: 30%;">
+                      <td style="vertical-align: top">
+                        <div class="item-box">
+                          <div style="width: 915%; position: relative; transition-duration: 0s;">
+                            <div class="item tmbg" style="height: 100%;margin:0 20px 0 0">
+                              <div class="info">
+                                <span class="title">防火墙</span>
+                                <small class="unit"></small>
+                              </div>
+                              <div class="value" style="font-size:12px;">(10.12.3.6)</div>
+                              <div class="value" style="font-size:11px;margin:5px 0 15px 0;"> </div>
+                              <div class="value">1,002,356</div>
+                            </div>
+                            <div class="item tmbg" style="height: 100%;margin:0 20px 0 0">
+                              <div class="info">
+                                <span class="title">防病毒</span>
+                                <small class="unit"></small>
+                              </div>
+                              <div class="value" style="font-size:12px;">(10.12.3.11)</div>
+                              <div class="value" style="font-size:11px;margin:5px 0 15px 0;"> </div>
+                              <div class="value">106</div>
+                            </div>
+                            <div class="item tmbg" style="height: 100%;margin:0 20px 0 0">
+                              <div class="info">
+                                <span class="title">WAF</span>
+                                <small class="unit"></small>
+                              </div>
+                              <div class="value" style="font-size:12px;">(10.12.3.12)</div>
+                              <div class="value" style="font-size:11px;margin:5px 0 15px 0;"> </div>
+                              <div class="value">106</div>
+                            </div>
+                            <div class="item tmbg" style="height: 100%;margin:0 20px 0 0">
+                              <div class="info">
+                                <span class="title">IPS</span>
+                                <small class="unit"></small>
+                              </div>
+                              <div class="value" style="font-size:12px;">(10.12.3.14)</div>
+                              <div class="value" style="font-size:11px;margin:5px 0 15px 0;"> </div>
+                              <div class="value">106</div>
+                            </div>
+                            <div class="item tmbg" style="height: 100%;margin:0 20px 0 0">
+                              <div class="info">
+                                <span class="title">DBA</span>
+                                <small class="unit"></small>
+                              </div>
+                              <div class="value" style="font-size:12px;">(10.12.3.14)</div>
+                              <div class="value" style="font-size:11px;margin:5px 0 15px 0;"> </div>
+                              <div class="value">106</div>
+                            </div>
+                            <div class="item tmbg" style="height: 100%;margin:0 20px 0 0">
+                              <div class="info">
+                                <span class="title">DBA</span>
+                                <small class="unit"></small>
+                              </div>
+                              <div class="value" style="font-size:12px;">(10.12.3.14)</div>
+                              <div class="value" style="font-size:11px;margin:5px 0 15px 0;"> </div>
+                              <div class="value">106</div>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </td>
+              <td style="width: 30%; min-width: 240px; top: 0; right: 0; position: relative; vertical-align: top;">
+                <table>
+                  <tr>
+                    <td>
+                      <div>
+                        <div style="float:left;font-size: 24px;padding-top: 12px;padding-left: 10%;">今日事件数：</div>
+                        <div id="event_total" class="animated bounce" style="float: left;font-size: 40px;padding-left: 12px;">364,526</div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table>
+                        <tr>
+                          <td>
+                            <div style="float: left;width: 180px;padding-left: 10%;font-size: 16px;">
+                              <ul style="margin-top: 12px;">
+                                <li>
+                                  <i></i>昨日：<b id="wendu">111,236</b>
+                                </li>
+                                <li>
+                                  <i></i>本周：<b id="shidu">1,211,216</b>
+                                </li>
+                                <li>
+                                  <i></i>上周：<b id="pm25">1,011,211</b>
+                                </li>
+                                <li>
+                                  <i></i>本月：<b id="aqi">4,211,211</b>
+                                </li>
+                              </ul>
+                            </div>
+                            <div style="float:left;padding-left:24px;">
+                              <div class="total-num-bg"></div>
+                              <div style="position: absolute; margin-top: -70px;margin-left: 36px;font-size: 16px;font-color: #ddd;">监控中</div>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr style="height: 40%;">
+                    <td>
+                      <div style="padding-left: 30px; height: 100%;">
+                        <div style="border-top: 2px dashed"></div>
+                        <div style="height: 98%; min-height: 130px; text-align: center">
+                          <table class="zhibiao">
+
+
+                            <tr>
+                              <td><span class="zhibiao-color" style="background-color: #00cc66;"></span></td>
+                              <td><span class="zhibiao-color" style="background-color: #00a040;"></span></td>
+                              <td><span class="zhibiao-color" style="background-color: #dbbc49;"></span></td>
+                              <td><span class="zhibiao-color" style="background-color: #fc703a;"></span></td>
+                              <td><span class="zhibiao-color" style="background-color: #de4045;"></span></td>
+                              <td><span class="zhibiao-color" style="background-color: #a13f6f;"></span></td>
+                              <td><span class="zhibiao-color" style="background-color: #5c1a25;"></span></td>
+                            </tr>
+                            <tr>
+                              <td><span class="zhibiao-title" style="width:50px">信息</span></td>
+                              <td><span class="zhibiao-title" style="width:50px">通知</span></td>
+                              <td><span class="zhibiao-title" style="width:50px">警示</span></td>
+                              <td><span class="zhibiao-title" style="width:50px">错误</span></td>
+                              <td><span class="zhibiao-title" style="width:50px">严重</span></td>
+                              <td><span class="zhibiao-title" style="width:50px">告警</span></td>
+                              <td><span class="zhibiao-title" style="width:50px">紧急</span></td>
+                            </tr>
+                            <tr class="title">
+                              <td><span class="zhibiao-title" style="color: #00cc66;">(10456)</span></td>
+                              <td><span class="zhibiao-title" style="color: #00a040;">(20456)</span></td>
+                              <td><span class="zhibiao-title" style="color: #dbbc49;">(1456)</span></td>
+                              <td><span class="zhibiao-title" style="color: #fc703a;">(1056)</span></td>
+                              <td><span class="zhibiao-title" style="color: #de4045;">(456)</span></td>
+                              <td><span class="zhibiao-title" style="color: #a13f6f;">(56)</span></td>
+                              <td><span class="zhibiao-title" style="color: #5c1a25;">(42)</span></td>
+                            </tr>
+                          </table>
+                        </div>
+                        <div style="border-top: 2px dashed"></div>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr style="height: 10%">
+        <td>
+          <div class="footer">
+            <span class="title" style="font-size: 14px;font-weight:normal;"><i>当前时间: </i></span>
+            <i><small id="currentTime" style="font-size: 16px;color:#00a040;"></small></i>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>
+<script src="static/js/jquery-3.3.1.min.js"></script>
+<script src="static/js/echarts.min.js"></script>
+<script src="static/js/macarons.js"></script>
+<script src="static/biz/js/events.js"></script>
+
+<script>
+  $(function () {
+    InitShowBoxSize();
+    initChart();
+    SetCurrentTime();
+    setInterval(SetCurrentTime, 1000);
+    $('#menu').click(function(e) {
+      var url = $(e.target).attr('url');
+      if (url) {
+        window.location.href = url;
+      }
+    })
+  });
+</script>
+
+<script>
+  function InitShowBoxSize() {
+    var myw = $("#showbox-0").width();
+    var myh = $("#showbox-0").height();
+
+    var qxw = $("#dynamic-showbox .quxian:first").width();
+    var qxh = $("#dynamic-showbox .quxian:first").height();
+
+    $("#dynamic-showbox .showbox").each(function () {
+      $(this).width(myw);
+      $(this).height(myh);
+    });
+
+    $("#dynamic-showbox .quxian").each(function () {
+      $(this).width(qxw);
+      $(this).height(qxh);
+    });
+  }
+
+  function SetCurrentTime() {
+    var time = getCurrentTime();
+    $('#currentTime').html(time);
+  }
+</script>
