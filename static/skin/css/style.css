@@ -245,44 +245,6 @@ table {
   animation: rotation 5s linear infinite;
 }
 
-.treats .item {
-  margin-left: 4%;
-  width: 90%;
-  height: 128px;
-}
-
-.treats .treated {
-  background: #00a040;
-}
-
-.treats .untreat {
-  background: #D9523F;
-}
-
-.treats .all {
-  background: #13D0B2;
-}
-
-.treats .yestodayall {
-  background: #F6A645;
-}
-
-.treats .historyall {
-  background: #5c1a25;
-}
-
-.treats-box-content {
-  margin-top: -24px;
-  padding-left: 44%;
-}
-
-.treats-box-content .number {
-  margin-top: 8px;
-  margin-left: 12px;
-  font-size: 28px;
-  font-weight: bold;
-}
-
 .box-tl {
   width: 20px;
   height: 20px;

@@ -8,6 +8,80 @@
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="stylesheet" href="static/css/animate.min.css">
   <link rel="stylesheet" href="static/skin/css/style.css">
+  <style>
+    .number-content {
+      width: 100%;
+      height: 134px;
+    }
+
+    .chart-content {
+      margin-top: 6px;
+      width: 100%;
+      height: calc(85vh - 148px);
+    }
+
+    .treats .item {
+      position: relative;
+      margin-left: 4%;
+      width: 90%;
+      height: 128px;
+    }
+
+    .treats .treated {
+      background: #00a040;
+    }
+
+    .treats .untreat {
+      background: #D9523F;
+    }
+
+    .treats .all {
+      background: #13D0B2;
+    }
+
+    .treats .yestodayall {
+      background: #F6A645;
+    }
+
+    .treats .historyall {
+      background: #5c1a25;
+    }
+
+    .treats-box-content {
+      margin-top: -24px;
+      padding-left: 44%;
+    }
+
+    .treats-box-content .number {
+      margin-top: 8px;
+      margin-left: 12px;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .chart-content .left {
+      position: relative;
+      float: left;
+      width: 25%;
+      height: 100%;
+    }
+
+    .chart-content .middle {
+      position: relative;
+      float: left;
+      margin-left: 1%;
+      width: 48%;
+      height: 100%;
+    }
+
+    .chart-content .right {
+      position: relative;
+      float: left;
+      margin-left: 1%;
+      width: 25%;
+      height: 100%;
+    }
+  </style>
 </head>
 
 <body style="height: 100%; width: 100%">
@@ -33,169 +107,73 @@
       </div>
       <!-- page content -->
       <div class="page-content">
-        <table>
-          <tr>
-            <td style="width: 70%; min-width: 520px; vertical-align: text-top;overflow: hidden" id="dynamic-showbox">
-              <div class="showbox" style="width: 100%; height: 100%; " id="showbox-0">
-                <table style="padding-left: 2%; vertical-align: top;" id="59053893-box" page="0">
-                  <tr style="height: 70%; vertical-align: top">
-                    <td style="vertical-align: top">
-                      <div class="middle-box">
-                        <div class="tmbg quxian" id="events-quxian">
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr style="height: 30%;">
-                    <td style="vertical-align: top">
-                      <div class="item-box">
-                        <div style="width: 915%; position: relative; transition-duration: 0s;">
-                          <div class="item tmbg" style="height: 100%;margin:0 20px 0 0">
-                            <div class="info">
-                              <span class="title">防火墙</span>
-                              <small class="unit"></small>
-                            </div>
-                            <div class="value" style="font-size:12px;">(10.12.3.6)</div>
-                            <div class="value" style="font-size:11px;margin:5px 0 15px 0;"> </div>
-                            <div class="value">1,002,356</div>
-                          </div>
-                          <div class="item tmbg" style="height: 100%;margin:0 20px 0 0">
-                            <div class="info">
-                              <span class="title">防病毒</span>
-                              <small class="unit"></small>
-                            </div>
-                            <div class="value" style="font-size:12px;">(10.12.3.11)</div>
-                            <div class="value" style="font-size:11px;margin:5px 0 15px 0;"> </div>
-                            <div class="value">106</div>
-                          </div>
-                          <div class="item tmbg" style="height: 100%;margin:0 20px 0 0">
-                            <div class="info">
-                              <span class="title">WAF</span>
-                              <small class="unit"></small>
-                            </div>
-                            <div class="value" style="font-size:12px;">(10.12.3.12)</div>
-                            <div class="value" style="font-size:11px;margin:5px 0 15px 0;"> </div>
-                            <div class="value">106</div>
-                          </div>
-                          <div class="item tmbg" style="height: 100%;margin:0 20px 0 0">
-                            <div class="info">
-                              <span class="title">IPS</span>
-                              <small class="unit"></small>
-                            </div>
-                            <div class="value" style="font-size:12px;">(10.12.3.14)</div>
-                            <div class="value" style="font-size:11px;margin:5px 0 15px 0;"> </div>
-                            <div class="value">106</div>
-                          </div>
-                          <div class="item tmbg" style="height: 100%;margin:0 20px 0 0">
-                            <div class="info">
-                              <span class="title">DBA</span>
-                              <small class="unit"></small>
-                            </div>
-                            <div class="value" style="font-size:12px;">(10.12.3.14)</div>
-                            <div class="value" style="font-size:11px;margin:5px 0 15px 0;"> </div>
-                            <div class="value">106</div>
-                          </div>
-                          <div class="item tmbg" style="height: 100%;margin:0 20px 0 0">
-                            <div class="info">
-                              <span class="title">DBA</span>
-                              <small class="unit"></small>
-                            </div>
-                            <div class="value" style="font-size:12px;">(10.12.3.14)</div>
-                            <div class="value" style="font-size:11px;margin:5px 0 15px 0;"> </div>
-                            <div class="value">106</div>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-            </td>
-            <td style="width: 30%; min-width: 240px; top: 0; right: 0; position: relative; vertical-align: top;">
-              <table>
-                <tr>
-                  <td>
-                    <div>
-                      <div style="float:left;font-size: 24px;padding-top: 12px;padding-left: 10%;">今日事件数：</div>
-                      <div id="event_total" class="animated bounce" style="float: left;font-size: 40px;padding-left: 12px;">364,526</div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <table>
-                      <tr>
-                        <td>
-                          <div style="float: left;width: 180px;padding-left: 10%;font-size: 16px;">
-                            <ul style="margin-top: 12px;">
-                              <li>
-                                <i></i>昨日：<b id="wendu">111,236</b>
-                              </li>
-                              <li>
-                                <i></i>本周：<b id="shidu">1,211,216</b>
-                              </li>
-                              <li>
-                                <i></i>上周：<b id="pm25">1,011,211</b>
-                              </li>
-                              <li>
-                                <i></i>本月：<b id="aqi">4,211,211</b>
-                              </li>
-                            </ul>
-                          </div>
-                          <div style="float:left;padding-left:48px;">
-                            <div class="total-num-bg"></div>
-                            <div style="position: absolute; margin-top: -70px;margin-left: 36px;font-size: 16px;color: #ddd;">监控中</div>
-                          </div>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                <tr style="height: 40%;">
-                  <td>
-                    <div style="padding-left: 30px; height: 100%;">
-                      <div style="border-top: 2px dashed"></div>
-                      <div style="height: 98%; min-height: 130px; text-align: center">
-                        <table class="zhibiao">
-
-
-                          <tr>
-                            <td><span class="zhibiao-color" style="background-color: #00cc66;"></span></td>
-                            <td><span class="zhibiao-color" style="background-color: #00a040;"></span></td>
-                            <td><span class="zhibiao-color" style="background-color: #dbbc49;"></span></td>
-                            <td><span class="zhibiao-color" style="background-color: #fc703a;"></span></td>
-                            <td><span class="zhibiao-color" style="background-color: #de4045;"></span></td>
-                            <td><span class="zhibiao-color" style="background-color: #a13f6f;"></span></td>
-                            <td><span class="zhibiao-color" style="background-color: #5c1a25;"></span></td>
-                          </tr>
-                          <tr>
-                            <td><span class="zhibiao-title" style="width:50px">信息</span></td>
-                            <td><span class="zhibiao-title" style="width:50px">通知</span></td>
-                            <td><span class="zhibiao-title" style="width:50px">警示</span></td>
-                            <td><span class="zhibiao-title" style="width:50px">错误</span></td>
-                            <td><span class="zhibiao-title" style="width:50px">严重</span></td>
-                            <td><span class="zhibiao-title" style="width:50px">告警</span></td>
-                            <td><span class="zhibiao-title" style="width:50px">紧急</span></td>
-                          </tr>
-                          <tr class="title">
-                            <td><span class="zhibiao-title" style="color: #00cc66;">(10456)</span></td>
-                            <td><span class="zhibiao-title" style="color: #00a040;">(20456)</span></td>
-                            <td><span class="zhibiao-title" style="color: #dbbc49;">(1456)</span></td>
-                            <td><span class="zhibiao-title" style="color: #fc703a;">(1056)</span></td>
-                            <td><span class="zhibiao-title" style="color: #de4045;">(456)</span></td>
-                            <td><span class="zhibiao-title" style="color: #a13f6f;">(56)</span></td>
-                            <td><span class="zhibiao-title" style="color: #5c1a25;">(42)</span></td>
-                          </tr>
-                        </table>
-                      </div>
-                      <div style="border-top: 2px dashed"></div>
-                    </div>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-        </table>
+        <div class="number-content">
+          <table>
+            <tr>
+              <td width="20%">
+                <div class="treats">
+                  <div class="item all">
+                    <img src="./static/img/indent.png" style="position: relative;top: 40px; left: 60px;">
+                    <div style="position: absolute; top: 20px; left: 136px;font-size: 18px;color: #eee;">今日总数</div>
+                    <div style="position: absolute; top: 60px; left: 136px;font-size: 32px;color: #eee;">106</div>
+                  </div>
+                </div>
+              </td>
+              <td width="20%">
+                <div class="treats">
+                  <div class="item treated">
+                    <img src="./static/img/indent.png" style="position: relative;top: 40px; left: 60px;">
+                    <div style="position: absolute; top: 20px; left: 136px;font-size: 18px;color: #eee;">今日已处置</div>
+                    <div style="position: absolute; top: 60px; left: 136px;font-size: 32px;color: #eee;">88</div>
+                  </div>
+                </div>
+              </td>
+              <td width="20%">
+                <div class="treats">
+                  <div class="item untreat">
+                    <img src="./static/img/indent.png" style="position: relative;top: 40px; left: 60px;">
+                    <div style="position: absolute; top: 20px; left: 136px;font-size: 18px;color: #eee;">今日未处置</div>
+                    <div style="position: absolute; top: 60px; left: 136px;font-size: 32px;color: #eee;">18</div>
+                  </div>
+                </div>
+              </td>
+              <td width="20%">
+                <div class="treats">
+                  <div class="item yestodayall">
+                    <img src="./static/img/indent.png" style="position: relative;top: 40px; left: 60px;">
+                    <div style="position: absolute; top: 20px; left: 136px;font-size: 18px;color: #eee;">昨日总数</div>
+                    <div style="position: absolute; top: 60px; left: 136px;font-size: 32px;color: #eee;">152</div>
+                  </div>
+                </div>
+              </td>
+              <td width="20%">
+                <div class="treats">
+                  <div class="item historyall">
+                    <img src="./static/img/indent.png" style="position: relative;top: 40px; left: 60px;">
+                    <div style="position: absolute; top: 20px; left: 136px;font-size: 18px;color: #eee;">历史总数</div>
+                    <div style="position: absolute; top: 60px; left: 136px;font-size: 32px;color: #eee;">1,052</div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="chart-content">
+          <div class="left">
+            <div class="left1"></div>
+            <div class="left2"></div>
+          </div>
+          <div class="middle">
+            <div class="box-tl"></div>
+            <div class="box-tr"></div>
+            <div class="box-bl"></div>
+            <div class="box-br"></div>
+          </div>
+          <div class="right">
+            <div class="right1"></div>
+            <div class="right2"></div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -209,8 +187,6 @@
 
 <script>
   $(function () {
-    InitShowBoxSize();
-    initChart();
     SetCurrentTime();
     setInterval(SetCurrentTime, 1000);
     $('#menu').click(function (e) {
@@ -223,24 +199,6 @@
 </script>
 
 <script>
-  function InitShowBoxSize() {
-    var myw = $("#showbox-0").width();
-    var myh = $("#showbox-0").height();
-
-    var qxw = $("#dynamic-showbox .quxian:first").width();
-    var qxh = $("#dynamic-showbox .quxian:first").height();
-
-    $("#dynamic-showbox .showbox").each(function () {
-      $(this).width(myw);
-      $(this).height(myh);
-    });
-
-    $("#dynamic-showbox .quxian").each(function () {
-      $(this).width(qxw);
-      $(this).height(qxh);
-    });
-  }
-
   function SetCurrentTime() {
     var time = getCurrentTime();
     $('#currentTime').html(time);
